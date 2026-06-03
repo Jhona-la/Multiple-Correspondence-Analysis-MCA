@@ -47,3 +47,13 @@ Para visualizar los resultados, simplemente abra el cuaderno `Proyecto/Final.ipy
 
 ---
 *Desarrollado como una herramienta de apoyo a la gestión humana en el sector educativo.*
+
+## 🌐 Dashboard Interactivo (Streamlit)
+
+Para ejecutar la aplicación web interactiva, asegúrese de tener instaladas las dependencias y ejecute:
+
+```bash
+streamlit run dashboard.py
+```
+
+El dashboard permite filtrar datos en tiempo real por sede y vinculación, visualizando KPIs dinámicos y análisis de impacto.
