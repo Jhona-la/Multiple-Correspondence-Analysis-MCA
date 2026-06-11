@@ -1,59 +1,45 @@
-# Análisis de Absentismo Docente: Edición de Élite
+# Análisis de Absentismo Docente: Plataforma de Inteligencia "Mastermind"
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
-![Data Science](https://img.shields.io/badge/Data-Science-green.svg)
-![Status](https://img.shields.io/badge/Status-Completed-success.svg)
+![ML](https://img.shields.io/badge/Machine-Learning-orange.svg)
+![XAI](https://img.shields.io/badge/Explainable-AI-red.svg)
+![Status](https://img.shields.io/badge/Status-Elite-success.svg)
 
-## 📋 Resumen del Proyecto
+## 🧠 Resumen de la Solución
 
-Este repositorio contiene una solución integral de análisis de datos para el **absentismo docente** en el sector educativo. Utilizando técnicas avanzadas de Machine Learning, Series Temporales y Visualización de Datos, el proyecto transforma registros administrativos en inteligencia accionable para la toma de decisiones estratégicas.
+Esta plataforma representa el estándar más alto en análisis de datos para el sector educativo. No es solo un cuaderno de análisis; es una **arquitectura modular de inteligencia de datos** diseñada para diagnosticar, predecir y explicar los fenómenos de absentismo docente en Cundinamarca.
 
-La solución aborda el problema desde múltiples dimensiones: demográfica, geográfica, temporal y conductual, permitiendo identificar no solo *qué* está pasando, sino *por qué* y *qué pasará* en el futuro.
+## 🚀 Capacidades de Vanguardia
 
-## 🚀 Características Principales
+*   **Arquitectura Modular**: Lógica desacoplada en el paquete `src/` (ML, Geo, Styling, Utils).
+*   **Inteligencia Artificial Explicable (XAI)**: Motor SHAP que desglosa la contribución individual de cada variable al riesgo de un docente.
+*   **Análisis de Supervivencia (KM)**: Modelado de la probabilidad de retorno al trabajo tras una ausencia.
+*   **Geospatial Intelligence**: Mapeo preciso de "hotspots" de absentismo en municipios de Cundinamarca.
+*   **Segmentación Multidimensional**: Identificación de perfiles mediante MCA (3D) y K-Means.
+*   **Análisis de Cohortes**: Evaluación del impacto basado en la antigüedad del funcionario.
+*   **Visualización de Élite**: Dashboards interactivos en Streamlit, diagramas de Sankey, curvas de Lorenz y grafos de red.
 
-*   **Dashboards Ejecutivos**: Resúmenes visuales de alto impacto mediante Plotly y CSS personalizado.
-*   **Forecasting con Prophet**: Predicción del volumen de ausencias para los próximos 6 meses.
-*   **Segmentación Inteligente**: Agrupación de docentes mediante MCA (Análisis de Correspondencias Múltiples) y K-Means.
-*   **Detección de Anomalías**: Identificación de patrones de absentismo inusuales mediante Isolation Forest.
-*   **Scoring de Riesgo**: Algoritmo ponderado para identificar funcionarios críticos que requieren intervención.
-*   **Visualización Multidimensional**: Diagramas de Sankey, Mapas de Calor, Parallel Categories y Gráficos de Piruleta.
+## 📊 Diccionario de Datos Maestro
 
-## 📊 Estructura de Datos
+El proyecto incluye un **Diccionario de Datos (Mastermind Level)** integrado directamente en el notebook, detallando tipos, formatos y el rol estratégico de cada columna en el pipeline analítico.
 
-El análisis se basa en el archivo `Consolidado.xlsx` (ubicado en `Proyecto/`), que contiene registros de novedades administrativas. Las variables clave incluyen:
+## 🛠️ Stack Tecnológico
 
-*   **TIPO**: Vinculación (1: Planta, 2: Provisional).
-*   **SUBTIPO**: Motivo específico de la novedad (Licencias, Permisos, Traslados).
-*   **DIAS HABILES**: El KPI principal; impacto en la continuidad educativa.
-*   **EDAD / SEXO**: Dimensiones demográficas para el perfilado.
-
-## 📁 Organización del Repositorio
-
-*   `Proyecto/Final.ipynb`: Cuaderno principal con el análisis completo y visualizaciones de élite.
-*   `Proyecto/Consolidado.xlsx`: Dataset principal procesado.
-*   `Datos filtrados.xlsx / .csv`: Archivos de datos complementarios.
-
-## 🛠️ Tecnologías Utilizadas
-
-*   **Análisis**: Pandas, NumPy, Scipy.
-*   **Machine Learning**: Scikit-Learn (Isolation Forest, KMeans, RandomForest).
-*   **Forecasting**: Meta Prophet.
-*   **Visualización**: Plotly, Seaborn, Matplotlib, Bokeh, WordCloud, NetworkX.
+*   **Core**: Pandas, NumPy, XGBoost, Scikit-Learn.
+*   **Insights**: Meta Prophet, Lifelines (Survival), SHAP.
+*   **Viz**: Plotly, Seaborn, Matplotlib, NetworkX, WordCloud.
+*   **App**: Streamlit.
 
 ## 💻 Ejecución
 
-Para visualizar los resultados, simplemente abra el cuaderno `Proyecto/Final.ipynb` en GitHub. El cuaderno ha sido pre-ejecutado y todos los gráficos dinámicos se renderizan automáticamente en formato estático de alta resolución.
+### Visualización Rápida
+Abra `Proyecto/Final.ipynb`. Todos los resultados están pre-renderizados en alta fidelidad.
 
----
-*Desarrollado como una herramienta de apoyo a la gestión humana en el sector educativo.*
-
-## 🌐 Dashboard Interactivo (Streamlit)
-
-Para ejecutar la aplicación web interactiva, asegúrese de tener instaladas las dependencias y ejecute:
-
+### Dashboard Interactivo
 ```bash
+pip install -r requirements.txt
 streamlit run dashboard.py
 ```
 
-El dashboard permite filtrar datos en tiempo real por sede y vinculación, visualizando KPIs dinámicos y análisis de impacto.
+---
+*Transformando registros administrativos en decisiones estratégicas de alta fidelidad.*
